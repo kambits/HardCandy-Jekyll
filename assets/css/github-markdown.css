@@ -157,7 +157,7 @@
 }*/
 .markdown-body a {
   transition-duration: .3s;
-  color: #9A85FF;
+  color: rgba(0, 0, 255, 0.671);
   font-weight: bold;
 }
 .markdown-body a:active,

@@ -10,3 +10,29 @@
     </div>
   </a>
 </div>
+
+<!-- <div id="toc-display" class="toc go-toc">
+    <span style="font-family:'ffad_matroregular';">Toc</span>
+    <nav id="toc" data-toggle="toc"></nav>
+</div> -->
+
+
+<div id="toc-display" class="toc go-toc">
+  <div id="toc-inside">
+      <span style="font-family:'ffad_matroregular';">Toc</span>
+      <nav id="toc" data-toggle="toc"></nav>
+  </div>
+</div>
+
+<script>
+    var navSelector = '#toc'
+    var $myNav = $(navSelector)
+    // Toc.init($myNav)
+    Toc.init({
+      $nav: $("#myNav"),
+      $scope: $("h1, h2, h3, h4, h5, h6")
+    });
+    $('body').scrollspy({
+      target: navSelector
+    })
+</script>

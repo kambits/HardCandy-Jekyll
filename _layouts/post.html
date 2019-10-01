@@ -6,7 +6,8 @@
 {% include head.html %}
 {% include androidColor.html %}
 </head>
-<body>
+<!-- <body> -->
+<body data-spy="scroll" data-target="#toc">
 
 <!-- 顶部锚点 -->
 <a id="htmlup" name="htmlup"></a>
@@ -18,17 +19,9 @@
 {% include post-title.html %}
 <div class="markdown-body fadeInUp animated">
 
-  {% if page.subtitle %}
-    {% if page.color.size==0 or page.color==nil %}
-      <div class="postpage-subtitle" style="border-left: 8px solid #9A85FF; border-right: 8px solid #9A85FF;">
-        {{ page.subtitle }}
-      </div>
-    {% else %}
-      <div class="postpage-subtitle" style="border-left: 8px solid {{ page.color }}; border-right: 8px solid {{ page.color }}">
-        {{ page.subtitle }}
-      </div>
-    {% endif %}
-  {% endif %}
+  <div class="postpage-subtitle" style="border-left: 8px solid #9A85FF; border-right: 8px solid #9A85FF;">
+    {{ page.title }}
+  </div>
 
   <!-- 文章内容 -->
   {{ page.content }}
@@ -44,6 +37,11 @@
 {% include goto.html %}
 <!-- 引入页面底部模块 -->
 {% include footer.html %}
+
+<!-- add after bootstrap.min.js -->
+<link rel="stylesheet" href="/assets/css/bootstrap-toc.min.css">
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/bootstrap-toc.min.js"></script>
 
 <!-- 引用wow.js的动画效果 -->
 <script src="/assets/js/wow.js"></script>

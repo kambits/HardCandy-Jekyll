@@ -1,4 +1,4 @@
-@media screen and ( min-width : 601px ){
+@media screen and ( min-width : 660px ){
   #boot-area{
     display: none !important;
   }
@@ -23,14 +23,14 @@
   }
 
   .top span:first-child{
-      top: 180px;
+      top: 50px;
       font-size: 35px;
       font-weight: 450;
       width: 80%;
   }
 
   .post-top{
-    height: 395px;
+    height: 120px;
   }
   .post-titlearea span:first-child{
     top: 40px;
@@ -39,15 +39,15 @@
     width: 95%;
   }
   .top span:nth-child(2){
-      top: 260px;
+      top: 130px;
       font-size: 18px;
   }
   .top span:nth-child(3){
-      top: 300px;
+      top: 170px;
       font-size: 18px;
   }
   .top span:nth-child(4){
-      top: 350px;
+      top: 160px;
       font-size: 18px;
   }
   .post-list li,.tags-list li,.ex-list li{
@@ -115,9 +115,8 @@
   }
 }
 
-@media screen and ( max-width: 600px ){
+@media screen and ( max-width: 660px ){
   .top span:first-child{
-      top: 180px;
       font-size: 30px;
       font-weight: 450;
   }
@@ -129,5 +128,11 @@
   }
   #top-boot{
     display:block;
+  }
+}
+
+@media (max-width: 600px) {
+  #toc-display{
+    display: none;
   }
 }

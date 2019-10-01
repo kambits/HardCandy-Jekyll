@@ -107,3 +107,21 @@
        url("../fonts/DankMonoNormal/DankMonoNormal.eot") format("embedded-opentype"),
        url("../fonts/DankMonoNormal/DankMonoNormal.svg") format("svg");
 }
+
+@font-face {
+     font-family: "RockSalt";
+     src: url("../fonts/RockSalt/RockSalt.woff2") format("woff2"),
+          url("../fonts/RockSalt/RockSalt.woff") format("woff"),
+          url("../fonts/RockSalt/RockSalt.ttf") format("truetype"),
+          url("../fonts/RockSalt/RockSalt.eot") format("embedded-opentype"),
+          url("../fonts/RockSalt/RockSalt.svg") format("svg");
+}
+
+@font-face {
+     font-family: "gloriahallelujah";
+     src: url("../fonts/gloriahallelujah/gloriahallelujah.woff2") format("woff2"),
+          url("../fonts/gloriahallelujah/gloriahallelujah.woff") format("woff"),
+          url("../fonts/gloriahallelujah/gloriahallelujah.ttf") format("truetype"),
+          url("../fonts/gloriahallelujah/gloriahallelujah.eot") format("embedded-opentype"),
+          url("../fonts/gloriahallelujah/gloriahallelujah.svg") format("svg");
+   }

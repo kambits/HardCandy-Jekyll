@@ -2,22 +2,6 @@
 
 
 
-### Preview
-
-[在线预览 view demo →](http://xseven.me/)
-
-![1](/screenshot/1.png)
-
-![2](/screenshot/2.png)
-
-![3](/screenshot/3.png)
-
-想要查看手机端显示效果，扫描下方二维码浏览器打开即可
-
-![4](/screenshot/4.png)
-
-
-
 ### 主题特性
 
 - 主题基于 `jekyll 3.8.1` 开发
@@ -30,6 +14,8 @@
 - 支持 `百度统计` 、`谷歌分析` 两种网站追踪系统
 - 支持13款不同社交平台图标及链接地址指向
 - 支持11个不同平台的文章分享路口
+- 支持文章搜索
+- 支持TOC目录
 
 
 
@@ -37,7 +23,7 @@
 
 #### 线上部署
 
-​	首先在 `github` 上开启一个仓库起名为 `你的github用户名.github.io` 。并 `clone` 你的仓库到本地。 然后下载 `HardCandy-Jekyll` 的 [源码](https://github.com/xukimseven/HardCandy-Jekyll) 到本地之后，将 `_config.yml` 文件更改为自己的配置（下面会介绍）。之后，将所有文件拷贝至自己的本地仓库根目录下，再上传至自己的 `github` 线上仓库，即可通过域名 `https://你的github用户名.github.io` 访问看到自己的博客页面。
+​	首先在 `github` 上开启一个仓库起名为 `你的github用户名.github.io` 。并 `clone` 你的仓库到本地。 然后下载 `HardCandy-Jekyll` 的 [源码](https://github.com/kambit/HardCandy-Jekyll.git) 到本地之后，将 `_config.yml` 文件更改为自己的配置（下面会介绍）。之后，将所有文件拷贝至自己的本地仓库根目录下，再上传至自己的 `github` 线上仓库，即可通过域名 `https://你的github用户名.github.io` 访问看到自己的博客页面。
 
 #### 本地部署
 
@@ -113,27 +99,9 @@ url: 'https://abc.github.io' # your host
 ```yaml
 layout: post
 title:  "post title"
-subtitle: 'post subtitle'
 date:   2018-05-29 08:44:13
 tags: html js css
-description: ''
-color: 'rgb(154,133,255)'
-cover: ''
 ```
-
-关于color：
-
-​	此处的color用于post页面的顶部位置的背景色。如上面展示图所示为 `rgb(154,133,255)` 色。
-
-​	对于color的书写，如果颜色代码为 `rgb` 或 `rgba` 又或是 `英文单词` 的话，可以不用引号包裹，但如果颜色代码为 `#123456` 这种16进制码的话，就必须使用引号包裹。所以，在使用中，推荐一致都使用引号，以免错误使用。
-
-​	当然，如果你在书写文章时，忘记写color的值的话，主题默认会为你填写 `rgb(154,133,255)` 色。就是上图显示的颜色。虽然不影响页面的显示，但如果想要更多彩的页面效果的话，建议在每一篇的头信息里写上 color 值。
-
-关于cover：
-
-​	此处需填写某一张图片的 `url` ，`url` 值可以是线上的某张图片，也可以是博客目录下的图片。关键是要书写正确。这张图片用于在首页下博客列表里显示，如下图。
-
-![5](/screenshot/5.png)
 
 
 
@@ -206,14 +174,12 @@ SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagr
 ```yaml
 ---
 layout: default
-title: your awesome title
 page-title: awesome page-title.
-home-title: awesome home-title.
 description: description
 ---
 ```
 
-​	该部分位于 `index.html` 页面，修改 `title` 、`page-title` 、`home-title`  、`description`为个人想要的信息，默认配置的显示效果如下图。
+​	该部分位于 `index.html` 页面，修改 `page-title`  、`description`为个人想要的信息，默认配置的显示效果如下图。
 
 ![7](/screenshot/7.png)
 
@@ -239,7 +205,7 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
 
 ```yaml
 # 分页
-paginate: 2
+paginate: 20
 paginatepath: ['page:num']
 ```
 
