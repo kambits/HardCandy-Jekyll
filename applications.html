@@ -1,0 +1,33 @@
+---
+layout: default
+title: 应用推荐
+page-title: applications
+---
+
+{% include header.html %}
+{% include boot.html %}
+<main>
+    {% include title.html %}
+    <ul class="ex-list">
+        <li class="fadeInUp animated">
+            {% if site.applications.size>0 %}
+                {% for application in site.applications %}
+                <a href="#{{ application[0] }}" class="tag">{{ application[0]}}</a>
+                {% endfor %}
+            {% endif %}
+        </li>
+        {% for application in site.applications %}
+        <a href="{{ application[1].link }}">
+            <span class="tag-name" id="{{ application[0] }}"></span>
+            <li class="fadeInUp animated">
+     
+                <section class="post-preview">
+                    <h2 class="post-title">「&emsp;{{ application[0] }}&emsp;」</h2>
+                    <p class="post-excerpt">{{ application[1].description }}</p>
+                </section>
+            </li>
+        </a>
+        {% endfor%}
+    </ul>
+</main>
+{% include footer.html %}

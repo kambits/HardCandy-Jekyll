@@ -1,9 +1,6 @@
 {% for post in paginator.posts %}
   <a href="{{ post.url }}">
       <li class="fadeInUp animated">
-          {% if post.cover %}
-          <div class="post-cover" style="background-position:center;"></div>
-          {% endif %}
           <section class="post-preview">
               <h2 class="post-title">{{ post.title }}</h2>
               <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 126}}</p>

@@ -9,7 +9,7 @@ page-title: aboutMe
 <main>
     {% include title.html %}
     <ul class="ex-list">
-        <li class="fadeInUp animated">
+      <li class="fadeInUp animated">
         {% if site.author %}
           <div class="portraits"><img src="{{ site.portraits }}" alt=""></div>
           <span id="yourname">{{ site.name }}</span>
@@ -28,13 +28,19 @@ page-title: aboutMe
           {% endfor%}
         {% endif %}
       </li>
-      <li class="fadeInUp animated">
-      {% if site.tags.size>0 %}
-          {% for tag in site.tags %}
-          <a href="tags.html#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
+    </ul>
+    <div class="wow fadeIn top" data-wow-duration="3.5s" >
+        <span class="wow fadeInUp" data-wow-delay="0.2s">friendLinks</span>
+    </div>
+    <ul class="ex-list">
+        <li  class="fadeInUp animated">
+          {% for friend in site.friends %}
+            <span class="tag-name" >
+                <a href="{{ friend[1] }}">「&emsp;{{ friend[0] }}&emsp;」</a>
+            </span>
+                </br>
           {% endfor %}
-      {% endif %}
-      </li>
+        </li>
     </ul>
 </main>
 {% include footer.html %}

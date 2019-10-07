@@ -1,0 +1,19 @@
+[
+  
+    {
+      "title"    : "Welcome to Jekyll!",
+      "category" : "",
+      "tags"     : "jekyll, update",
+      "url"      : "/2018/05/17/hello.html",
+      "date"     : "2018-05-17 16:05:21 +1000"
+    } ,
+  
+    {
+      "title"    : "Hello Jekyll",
+      "category" : "",
+      "tags"     : "jekyll",
+      "url"      : "/2017/04/18/hello-jekyll.html",
+      "date"     : "2017-04-18 00:00:00 +1000"
+    } 
+  
+]
