@@ -39,6 +39,13 @@ SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagr
   zhihu: ''
   juejin: ''
   twitch: ''
+  docker: ''
+  segmentfault: ''
+  csdn: ''
+  jianshu: ''
+  OSCHINA: ''
+  toutiao: ''
+  cnblogs: ''
 
 # 分页
 paginate: 20
