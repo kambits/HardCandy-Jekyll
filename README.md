@@ -138,7 +138,7 @@ portraits: '/assets/profile.jpeg' # your portraits image file path
 ```yaml
 # SNS
 SNS: true
-SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
+SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen', 'Google', 'zhihu', 'juejin', 'twitch', 'docker', 'segmentfault', 'csdn', 'jianshu', 'OSCHINA', 'toutiao', 'cnblogs']
   mail: 'mailto:abc@gmail.com'
   weixin: '' # 你的微信二维码存放的地址
   qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
@@ -153,6 +153,13 @@ SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagr
   zhihu: ''
   juejin: ''
   twitch: ''
+  docker: ''
+  segmentfault: ''
+  csdn: ''
+  jianshu: ''
+  OSCHINA: ''
+  toutiao: ''
+  cnblogs: ''
 ```
 
 ​	~~主题一共配置了 13种 社交媒体的图标，只要在需要开启的社交账号的名字后填写你的个人主页链接即可，不需要开启的就在那一行的头部用 `#` 注释这一行即可。同样的，如果需要更换每个图标的排列位置，只需要改变他们的每一行排列的顺序即可。~~
@@ -193,11 +200,25 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
   首页: '/'
   标签: '/tags.html'
   时间线: '/timeline.html'
+  应用推荐: '/applications.html'
   关于博主: '/about.html'
-  友情链接: '/friendLink.html'
+  # 友情链接: '/friendLink.html'
 ```
 
 ​	默认全部开启他们，当然如果想要自己添加，按照格式填在下方即可，当然页面显示顺序与每一行的位置有关。
+
+#### 应用推荐
+
+```
+# 推荐应用
+applications:
+  vscode:
+    link: "https://www.google.com"
+    description: "Visual Studio Code（简称VS Code）是一个由微软开发，同时支持Windows 、 Linux和macOS等操作系统且开放源代码的代码编辑器[4],它支持测试，并内置了Git 版本控制功能，同时也具有开发环境功能，例如代码补全（类似于 IntelliSense）、代码片段和代码重构等，该编辑器支持用户个性化配置，例如改变主题颜色、键盘快捷方式等各种属性和参数，同时还在编辑器中内置了扩展程序管理的功能。"
+  bear:
+    link: "https://www.google.com"
+    description: "bear"
+```
 
 
 
