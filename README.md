@@ -138,7 +138,7 @@ portraits: '/assets/profile.jpeg' # your portraits image file path
 ```yaml
 # SNS
 SNS: true
-SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
+SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen', 'Google', 'zhihu', 'juejin', 'twitch', 'docker', 'segmentfault', 'csdn', 'jianshu', 'OSCHINA', 'toutiao', 'cnblogs']
   mail: 'mailto:abc@gmail.com'
   weixin: '' # 你的微信二维码存放的地址
   qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
@@ -153,6 +153,13 @@ SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagr
   zhihu: ''
   juejin: ''
   twitch: ''
+  docker: ''
+  segmentfault: ''
+  csdn: ''
+  jianshu: ''
+  OSCHINA: ''
+  toutiao: ''
+  cnblogs: ''
 ```
 
 ​	~~主题一共配置了 13种 社交媒体的图标，只要在需要开启的社交账号的名字后填写你的个人主页链接即可，不需要开启的就在那一行的头部用 `#` 注释这一行即可。同样的，如果需要更换每个图标的排列位置，只需要改变他们的每一行排列的顺序即可。~~
